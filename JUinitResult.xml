@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites duration="50.5">
+    <testsuite failures="0" name="Check if QMetry is available" package="tests/suites/xunit" tests="4" time="0.008">
+        <testcase classname="tests/suites/xunit" name="Evaluated function returns the expected value" time="0.007"/>
+        <testcase classname="tests/suites/xunit" name="Found an element matching: testsuites[duration]" time="0"/>
+        <testcase classname="tests/suites/xunit" name="Found an element matching: testsuite[name=&quot;foo&quot;][package=&quot;foo&quot;]" time="0.001"/>
+        <testcase classname="tests/suites/xunit" name="Found an element matching: testsuite[name=&quot;bar&quot;][package=&quot;bar&quot;]" time="0"/>
+    </testsuite>
+</testsuites>
