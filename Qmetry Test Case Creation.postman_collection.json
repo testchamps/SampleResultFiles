@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "d72d8b56-4277-4bfc-94b5-dcb4612c5c4e",
+		"name": "Qmetry Test Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get project and folder  details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start\":0,\n\"limit\":50,\n\"page\":1,\n\"params\":{\"showArchive\":false}}"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/admin/project/default/list",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"admin",
+						"project",
+						"default",
+						"list"
+					]
+				},
+				"description": "API to list all projects"
+			},
+			"response": []
+		},
+		{
+			"name": "List of fields",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start\":0,\n\"limit\":50,\n\"page\":0,\n\"entityTypeID\":0,\n\"projectID\":22,\n\"isSystemFieldRequired\":true}"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/admin/managefield/list",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"admin",
+						"managefield",
+						"list"
+					]
+				},
+				"description": "API to give list of fields"
+			},
+			"response": []
+		},
+		{
+			"name": "List of users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start\":0,\n\"limit\":\"50\",\n\"page\":0}\n"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/admin/user/list",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"admin",
+						"user",
+						"list"
+					]
+				},
+				"description": "API to show list of users"
+			},
+			"response": []
+		},
+		{
+			"name": "List of custom lists and dropdowns",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start\":51,\n\"limit\":\"50\",\n\"page\":1}"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/admin/customlist/list",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"admin",
+						"customlist",
+						"list"
+					]
+				},
+				"description": "API to list custom lists and dropdowns"
+			},
+			"response": []
+		},
+		{
+			"name": "List custom list values",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"qmMasterId\":26,\n\"start\":0,\n\"limit\":50,\n\"page\":0}\n"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/admin/customlist/listval",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"admin",
+						"customlist",
+						"listval"
+					]
+				},
+				"description": "API to list custom list values"
+			},
+			"response": []
+		},
+		{
+			"name": "Create testcase_Detailed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"tcFolderID\": \"50\", \n\"scope\": project, \n\"steps\": [\n\t{\"orderId\": 1, \n\t\"description\": \"Description for step1\", \n\t\"inputData\": \"123456\", \n\t\"expectedOutcome\": \"Test Case should be inserted\" \n\t},\n\t{\"orderId\": 2, \n\t\"description\": \"Description for step1\", \n\t\"inputData\": \"123456\", \n\t\"expectedOutcome\": \"Test Case should be inserted in step2\" \n\t}\n], \n\t\n\"name\": API_002,\t\n\"priority\": 2292, \n\"owner\": 153, \n\"testCaseState\": 2317, \n\"testCaseType\": 2322, \n\"executionMinutes\": 2, \n\"testingType\": 2279, \n\"description\": \"2nd test case with steps\" }"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/testcases",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"testcases"
+					]
+				},
+				"description": "API to create testcase"
+			},
+			"response": []
+		},
+		{
+			"name": "List Requirements",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start\":0,\n\"limit\":50,\n\"page\":0,\n\"scope\":project,\n\"rqFolderID\":61}"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/requirements/list",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"requirements",
+						"list"
+					]
+				},
+				"description": "Get list of all Requirements"
+			},
+			"response": []
+		},
+		{
+			"name": "List testcases",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"start\":0>,\n\"limit\":50,\n\"page\":0,\n\"scope\":\"project\",\n\"tcFolderID\":50}"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/testcases/list",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"testcases",
+						"list"
+					]
+				},
+				"description": "Get list of all Testcase under folder"
+			},
+			"response": []
+		},
+		{
+			"name": "Link TestCases to requirement",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "apikey",
+						"value": "iizEm1JOjk6wDf6g87B8x9BXAEZ6WUtcIUMpPOA8"
+					},
+					{
+						"key": "orgCode",
+						"value": "ABNAMRO"
+					},
+					{
+						"key": "scope",
+						"value": "Default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"rqID\":TC-RQ-22,\n\"rqVersionId\":286,\n\"tcVersionIds\":451}"
+				},
+				"url": {
+					"raw": "https://abnamrobank.qmetry.com/rest/requirements/link/testcases",
+					"protocol": "https",
+					"host": [
+						"abnamrobank",
+						"qmetry",
+						"com"
+					],
+					"path": [
+						"rest",
+						"requirements",
+						"link",
+						"testcases"
+					]
+				},
+				"description": "Link testcase(s) to requirement"
+			},
+			"response": []
+		}
+	]
+}
